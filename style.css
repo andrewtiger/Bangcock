@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Gaegu:wght@700&family=Poor+Story&display=swap');
+
+body{
+    background-image: url('trees-4741364.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+    font-family: 'Gaegu', cursive;
+}
+
+h1{
+    font-size: 7rem;
+    color: #000;
+    margin-bottom: 5rem;
+}
+
+.sogae{
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+h2{
+    font-size: 4.2rem;
+    margin-bottom: 4rem;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-center{
+    justify-content: center;
+    align-items: center;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.hidden{
+    display: none;
+}
+
+.btn{
+    font-size: 4rem;
+    padding: 2rem 0;
+    width: 30rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: rgb(28, 26, 26);
+    background: linear-gradient(90deg, rgb(170, 96, 255) 0%, rgb(240, 211, 255) 100%);
+    border-radius: 4px;
+}
+
+.btn:hover{
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(136, 69, 175, 0.6);
+    transition: tranform 150ms;
+    transform: scale(1.03);
+}
+
+.btn[disabled]:hover{
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+
+#highscore-btn{
+    background: linear-gradient(90deg, rgb(44, 110, 253) 0%, rgb(208, 217, 255) 100%);
+}
+
+#highscore-btn:hover{
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(47, 107, 180, 0.6);
+}
+
+.fa-crown{
+    font-size: 2.5rem;
+    margin-left: 1rem;
+}
+
+/* End Page CSS */
+
+.end-form-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 30rem;
+}
+
+input{
+    margin-bottom: 1rem;
+    width: 20rem;
+    padding: 1.5rem;
+    font-size: 1.8rem;
+    border: none;
+    box-shadow: 0 0.1rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+}
+
+input::placeholder{
+    color: #aaa;
+}
+
+#username{
+    margin-bottom: 3rem;
+    width: 100%;
+    outline: none;
+}
+
+#end-text{
+    font-size: 2.4rem;
+    color: #fff;
+    text-align: center;
+}
+
+#saveScoreBtn{
+    border: none;
+}
+
+.fa-home{
+    margin-left: 1rem;
+    font-size: 2rem;
+    color: rgb(28, 26, 26);
+}
+
+@media screen and (max-width: 650px) {
+    html {
+        font-size: 7px;
+    }
+    h1{
+        font-size: 9rem;
+    }
+    .btn{
+        font-size: 4rem;
+    }
+    .navbar-brand {
+        font-size: 2rem;
+    }
+    body{
+        background-image: url('trees-47413641.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #question{
+        font-size: 5rem;
+    }
+    .hud-prefix{
+        text-align: center;
+        font-size: 2rem;
+    }
+    
+    #progressBar{
+        width: 20rem;
+        height: 1rem;
+    }
+}
+
+@media screen and (max-width: 350px){
+    html {
+        font-size: 7px;
+    }
+    h1{
+        font-size: 8.5rem;
+    }
+    .btn{
+        font-size: 4rem;
+    }
+    .navbar-brand {
+        font-size: 2rem;
+    }
+    body{
+        background-image: url('trees-47413641.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #question{
+        font-size: 4rem;
+    }
+    .hud-prefix{
+        text-align: center;
+        font-size: 2rem;
+    }
+    
+    #progressBar{
+        width: 40rem;
+        height: 1rem;
+    }
+}
